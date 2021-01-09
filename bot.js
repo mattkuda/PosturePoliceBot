@@ -77,7 +77,7 @@ async function generateTweetBody(){
 
 // Once every N milliseconds
 tweeter();
-setInterval(tweeter, 60 * 1 * 1000);
+setInterval(function(){tweeter();}, 60 * 1 * 1000);
 // tweeter();
 
 // //Every 4 hours
