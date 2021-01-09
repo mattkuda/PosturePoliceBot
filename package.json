@@ -1,5 +1,9 @@
 {
   "name": "posture-police-bot",
   "version": "1.0.0",
-  "main": "bot.js"
+  "description": "Posture check",
+  "main": "bot.js",
+  "engines": {
+    "node": "12.14.1"
+  }
 }
