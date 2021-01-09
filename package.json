@@ -1,13 +1,16 @@
 {
   "name": "posture-police-bot",
   "version": "1.0.0",
-  "description": "Posture check",
   "main": "bot.js",
-  "engines": {
-    "node": "12.14.1"
+  "dependencies": {
+    "axios": "^0.21.1",
+    "twit": "^2.2.11"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
