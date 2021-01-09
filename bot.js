@@ -1,6 +1,5 @@
 const axios = require("axios").default;
 var Twit = require("twit");
-
 // Pulling all my twitter account info from another file
 var config = require("./config.js");
 
@@ -99,6 +98,7 @@ async function tweeter() {
       console.log(err);
     } else {
       console.log("Success: " + data.text);
+      
     }
   }
 }
