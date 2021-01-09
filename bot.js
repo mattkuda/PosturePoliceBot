@@ -6,7 +6,7 @@ var config = require("./config.js");
 // Making a Twit object for connection to the API
 var T = new Twit(config);
 
-async function generateTweetBody(){
+async function generateTweetBody() {
   var newBody = "⚠️ 𝗣𝗢𝗦𝗧𝗨𝗥𝗘 𝗖𝗛𝗘𝗖𝗞 ⚠️\n\n";
 
   let res = await axios.get("https://type.fit/api/quotes");
@@ -31,7 +31,7 @@ async function generateTweetBody(){
       Math.floor(Math.random() * 1000);
     return newBody;
   }
-};
+}
 
 // fetch("https://type.fit/api/quotes")
 //   .then(function(response) {
@@ -76,7 +76,9 @@ async function generateTweetBody(){
 
 // Once every N milliseconds
 tweeter();
-setInterval(function(){tweeter();}, 60 * 1 * 1000);
+setInterval(function () {
+  tweeter();
+}, 4 * 60 * 60 * 1 * 1000);
 // tweeter();
 
 // //Every 4 hours
@@ -98,7 +100,6 @@ async function tweeter() {
       console.log(err);
     } else {
       console.log("Success: " + data.text);
-      
     }
   }
 }
